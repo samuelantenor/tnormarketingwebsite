@@ -41,19 +41,19 @@ export default function ContactForm({ dict }: ContactFormProps) {
   const contactInfo = [
     {
       icon: FaPhone,
-      title: "Téléphone",
+      title: "Phone",
       content: dict.footer.contact.phone,
       color: "text-primary"
     },
     {
       icon: FaEnvelope,
-      title: "Courriel",
+      title: "Email",
       content: dict.footer.contact.email,
       color: "text-primary"
     },
     {
       icon: FaMapMarkerAlt,
-      title: "Adresse",
+      title: "Address",
       content: dict.footer.contact.address,
       color: "text-primary"
     }
@@ -192,8 +192,18 @@ export default function ContactForm({ dict }: ContactFormProps) {
               ))}
             </div>
 
-            {/* Map placeholder */}
-            <div className="mt-8 h-64 w-full bg-background-dark rounded-lg" />
+            {/* Google Maps */}
+            <div className="mt-8 w-full rounded-lg overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178787.81912808729!2d-73.71187334999999!3d45.5591827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC!5e0!3m2!1sen!2sca!4v1738280122657!5m2!1sen!2sca" 
+                width="100%" 
+                height="300" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </motion.div>
         </div>
       </div>

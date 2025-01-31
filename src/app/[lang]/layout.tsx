@@ -11,8 +11,13 @@ import ClientWrapper from '@/app/components/ClientWrapper';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'TNOR Marketing - Digital Marketing Agency',
+  title: 'TnorMarketing',
   description: 'Google certified Digital Marketing agency based in Montreal',
+  icons: {
+    icon: '/images/logo-tm.png',
+    shortcut: '/images/logo-tm.png',
+    apple: '/images/logo-tm.png',
+  },
 };
 
 export async function generateStaticParams() {
